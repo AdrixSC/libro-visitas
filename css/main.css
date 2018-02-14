@@ -1,0 +1,31 @@
+h3 {
+  text-align: center;
+}
+
+.comentarios-pasados , .comentarios-nuevos {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.comentarios-nuevos {
+  text-align: right;
+}
+
+.comentarios-pasados > p {
+  color: red;
+}
+
+.contenedor-comentario > p {
+  color: purple;
+  font-size: 30px;
+  text-align: center;
+}
+
+.p-top {
+  padding-top: 10px;
+}
+
+.p-bot {
+  padding-bottom: 20px;
+}
