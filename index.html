@@ -21,14 +21,14 @@
 <section class="row justify-content-center p-top">
   <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-10 offset-xs-1">
     <div class="btn-group" role="group" aria-label="Basic example">
-      <button type="button" class="btn btn-secondary">Large</button>
-      <button type="button" class="btn btn-secondary">Medium</button>
-      <button type="button" class="btn btn-secondary">Small</button>
-      <button type="button" class="btn btn-secondary">Color de texto</button>
-      <button type="button" class="btn btn-secondary">Color de fondo</button>
-      <button type="button" class="btn btn-secondary">Izquierda</button>
-      <button type="button" class="btn btn-secondary">Centrar</button>
-      <button type="button" class="btn btn-secondary">Derecha</button>
+      <button id="btn-large" type="button" class="btn btn-secondary">Large</button>
+      <button id="btn-medium" type="button" class="btn btn-secondary">Medium</button>
+      <button id="btn-small" type="button" class="btn btn-secondary">Small</button>
+      <button id="btn-text-color" type="button" class="btn btn-secondary">Color de texto</button>
+      <button id="btn-bkg-color" type="button" class="btn btn-secondary">Color de fondo</button>
+      <button id="btn-left" type="button" class="btn btn-secondary">Izquierda</button>
+      <button id="btn-center" type="button" class="btn btn-secondary">Centrar</button>
+      <button id="btn-rigth" type="button" class="btn btn-secondary">Derecha</button>
     </div>
     </div>
     </section>
@@ -42,7 +42,7 @@
 </section>
 <h3 class="p-top">Así se vería tu comentario</h3>
 <section class="row justify-content-center p-top">
-<div class="contenedor-comentario col-md-8  col-lg-8  col-xl-8">
+<div id="comment-container" class="contenedor-comentario col-md-8  col-lg-8  col-xl-8">
   <p>Hola amigos</p>
 </div>
 </section>
@@ -52,7 +52,11 @@
 </div>
 </section>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
