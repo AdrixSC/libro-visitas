@@ -34,10 +34,11 @@ containerComments.appendChild(divNewComment);
 
 //funcion para pintar comentarios
 function drawComments() {
-    var commentNewUsser = commentUser.innerHTML;
+    var commentNewUsser = document.createTextNode(commentUser)
+        //var commentNewUsser = commentUser.innerHTML;
     comments.unshift(commentNewUsser);
     console.log(comments);
-    //console.log(commentNewUsser);
+    console.log(commentNewUsser);
     //containerComments.appendChild(commentNewUsser);
     newComment.appendChild(commentNewUsser);
 }
