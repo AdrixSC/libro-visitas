@@ -1,77 +1,75 @@
-
-
-var mediumText = function() {
-    document.getElementById("btn-medium").style.fontSize = 40 + "pt";
-}
-
-var smallText = function() {
-    document.getElementById("btn-small").style.fontSize = 10 + "pt";
-}
-
-var colorText = function() {
-    var colorUser = prompt("Escribe el color que quieres en tu mensaje");
-    document.getElementById("btn-text-color").style.color = colorUser;
-}
-
-var backagroundColor = function() {
-    var backgroundUser = prompt("Escribe el color que quieres de fondo")
-    document.getElementById("btn-bkg-color").style.color = backgroundUser;
-}
-
-var leftText = function() {
-    document.getElementById("btn-left").style.textAlign = "left";
-}
-
-var centerText = function() {
-    document.getElementById("btn-center").style.textAlign = "center";
-}
-
-var rigthText = function() {
-    document.getElementById("btn-rigth").style.tectAlign = "rigth";
-}
-
-
-
-/*
-var containerComment = document.getElementById("comment-container");
-
-var btnLarge = addEventListener("click", largeText);*/
-
-/*addEventListener("click", largeText);
-
-var btnLarge = function(event) {
-    var largeText = document.getElementById("btn-large").style.fontSize = 80 + "pt";
-}*/
-
 //Traer elementos del html
 var textArea = document.getElementById('textarea-comment');
 var commentUser = document.getElementById("comment-user");
 var btnLarge = document.getElementById("btn-large");
+var btnMedium = document.getElementById("btn-medium");
+var btnSmall = document.getElementById("btn-small");
+var btnTextColor = document.getElementById("btn-text-color");
+var btnBkgColor = document.getElementById("btn-bkg-color");
+var btnLeft = document.getElementById("btn-left");
+var btnCenter = document.getElementById("btn-center");
+var btnRight = document.getElementById("btn-right");
 
 //Agregar eventos a los elementos
 textArea.addEventListener("keyup", viewText);
 btnLarge.addEventListener("click", largeText);
-//console.log(textArea.value);
+btnMedium.addEventListener("click", mediumText);
+btnSmall.addEventListener("click", smallText);
+btnTextColor.addEventListener("click", textColor);
+btnBkgColor.addEventListener("click", backgroundColorText);
+btnLeft.addEventListener("click", alignLeft);
+btnCenter.addEventListener("click", alignCenter);
+btnRight.addEventListener("click", alignRight);
 
 //Funcion para que se pinte en tiempo real el comentario del textarea
-function viewText () {
-  var textUser = textArea.value;
-  commentUser.innerText = textUser;
-  //console.log(textUser);
-  return commentUser;
+function viewText() {
+    var textUser = textArea.value;
+    commentUser.innerText = textUser;
+    //console.log(textUser);
+    return commentUser;
 }
 
-
-
 //Funcion para hacer el texto grande
-function largeText () {
+function largeText() {
     commentUser.style.fontSize = "80px";
 }
 
+//Funcion para hacer el texto mediano
+function mediumText() {
+    commentUser.style.fontSize = "40px";
+}
 
-/*function styleFontLarge () {
-  textUser.style.fontSize = 80 + "pt";
-}*/
+//Funcion para hacer el texto pequeño
+function smallText() {
+    commentUser.style.fontSize = "10px";
+}
+
+//Funcion para hacer el texto de color
+function textColor() {
+    var colorUser = prompt("Escribe el color que quieres en tu mensaje");
+    commentUser.style.color = colorUser;
+}
+
+//Funcion para hacer el fondo del texto de color
+function backgroundColorText() {
+    var backgroundUser = prompt("Escribe el color que quieres de fondo")
+    commentUser.style.backgroundColor = backgroundUser;
+}
+
+//Funcion para alinear el texto a la izquierda
+function alignLeft() {
+    commentUser.style.textAlign = "left";
+}
+
+//Funcion para alinear el texto al centro
+function alignCenter() {
+    commentUser.style.textAlign = "center";
+}
+
+//Funcion para alinear el texto a la derecha
+function alignRight() {
+    commentUser.style.textAlign = "right";
+}
 
 
 /*var divContainerComment = document.getElementById("comment-container");
