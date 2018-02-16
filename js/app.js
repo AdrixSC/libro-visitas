@@ -70,10 +70,3 @@ function alignCenter() {
 function alignRight() {
     commentUser.style.textAlign = "right";
 }
-
-
-/*var divContainerComment = document.getElementById("comment-container");
-var divCommentUser = document.getElementById("comment-user").appendChild(textArea);
-divContainerComment.appendChild(divCommentUser);
-var divSectionComment = document.getElementById("comment-section");
-divSectionComment.appendChild(divContainerComment);*/
