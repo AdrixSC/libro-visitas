@@ -1,64 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Libro de Visitas</title>
-  </head>
-  <body>
-    <div class="container">
-      <h3 class="p-top">Libro de visitas</h1>
-  <div class="comentarios-pasados">
-    <h6>Comentarios pasados:</h3>
-    <p>Me gusta front end development</p>
-  </div>
-  <div class="comentarios-nuevos">
-    <p>Gracias por el contenido, es super útil</p>
-  </div>
-</div>
-<h3 class="p-top">Agregar nuevo comentario</h3>
-<section class="row justify-content-center p-top">
-  <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-10 offset-xs-1">
-    <div class="btn-group" role="group" aria-label="Basic example">
-      <button id="btn-large" type="button" class="btn btn-secondary">Large</button>
-      <button id="btn-medium" type="button" class="btn btn-secondary">Medium</button>
-      <button id="btn-small" type="button" class="btn btn-secondary">Small</button>
-      <button id="btn-text-color" type="button" class="btn btn-secondary">Color de texto</button>
-      <button id="btn-bkg-color" type="button" class="btn btn-secondary">Color de fondo</button>
-      <button id="btn-left" type="button" class="btn btn-secondary">Izquierda</button>
-      <button id="btn-center" type="button" class="btn btn-secondary">Centrar</button>
-      <button id="btn-rigth" type="button" class="btn btn-secondary">Derecha</button>
-    </div>
-    </div>
-    </section>
-<section class="row justify-content-center p-top">
-  <div class="col-md-8  col-lg-8  col-xl-8 ">
-    <div class="form-group">
-    <label for="exampleFormControlTextarea1"></label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hola amigos"></textarea>
-  </div>
-  </div>
-</section>
-<h3 class="p-top">Así se vería tu comentario</h3>
-<section class="row justify-content-center p-top">
-<div id="comment-container" class="contenedor-comentario col-md-8  col-lg-8  col-xl-8">
-  <p>Hola amigos</p>
-</div>
-</section>
-<section class="row justify-content-center p-top p-bot">
-  <div class="col-md-8 offset-md-6 col-lg-8 offset-lg-6 col-xl-8 offset-xl-6">
-<button type="button" class="btn btn-secondary btn-sm">Enviar comentarios</button>
-</div>
-</section>
+</head>
 
-<script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<body>
+    <div class="container">
+        <h3 class="p-top">Libro de visitas</h1>
+            <div class="comentarios-pasados">
+                <h6>Comentarios pasados:</h3>
+        <p>Me gusta front end development</p>
+        </div>
+        <div class="comentarios-nuevos">
+            <p>Gracias por el contenido, es super útil</p>
+        </div>
+    </div>
+    <h3 class="p-top">Agregar nuevo comentario</h3>
+    <section class="row justify-content-center p-top">
+        <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-10 offset-xs-1">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button id="btn-large" type="button" class="btn btn-secondary">Large</button>
+                <button id="btn-medium" type="button" class="btn btn-secondary">Medium</button>
+                <button id="btn-small" type="button" class="btn btn-secondary">Small</button>
+                <button id="btn-text-color" type="button" class="btn btn-secondary">Color de texto</button>
+                <button id="btn-bkg-color" type="button" class="btn btn-secondary">Color de fondo</button>
+                <button id="btn-left" type="button" class="btn btn-secondary">Izquierda</button>
+                <button id="btn-center" type="button" class="btn btn-secondary">Centrar</button>
+                <button id="btn-rigth" type="button" class="btn btn-secondary">Derecha</button>
+            </div>
+        </div>
+    </section>
+    <section class="row justify-content-center p-top">
+        <div class="col-md-8  col-lg-8  col-xl-8 ">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1"></label>
+                <textarea class="form-control textarea" id="exampleFormControlTextarea1" rows="3" placeholder="Hola amigos"></textarea>
+            </div>
+        </div>
+    </section>
+    <h3 class="p-top">Así se vería tu comentario</h3>
+    <section id="comment-section" class="row justify-content-center p-top">
+        <div id="comment-container" class="contenedor-comentario col-md-8  col-lg-8  col-xl-8">
+            <!--<p id="comment-user">Hola amigos</p>-->
+        </div>
+    </section>
+    <section class="row justify-content-center p-top p-bot">
+        <div class="col-md-8 offset-md-6 col-lg-8 offset-lg-6 col-xl-8 offset-xl-6">
+            <button type="button" class="btn btn-secondary btn-sm">Enviar comentarios</button>
+        </div>
+    </section>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
-  </body>
+</body>
+
 </html>
