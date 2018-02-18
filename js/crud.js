@@ -23,33 +23,44 @@ var comments = [
 var btnSendComment = document.getElementById("btnSend");
 btnSendComment.addEventListener("click", addComment);
 
+var pastComments = document.getElementById("comentarios-pasados");
+
 //funcion para pintar comentarios
 function drawComments() {
-  //crear elementos
-  var divNewComment = document.createElement("div");
-  var newComment = document.createElement("p");
+    pastComments.innerHTML = " ";
+    for (var i = 0; i < comments.length; i++) {
+        console.log(comments[i]);
+        var containerDom = creatCommentsDom(comments[i]);
+        console.log(containerDom);
+        pastComments.appendChild(containerDom);
+    };
+};
 
-  //agregar elementos a su padre y a un elemento existente
-  divNewComment.appendChild(newComment);
-  var containerComments = document.getElementById("container-comments");
-  containerComments.appendChild(divNewComment);
+//funcion para crear nueva data
+function creatCommentsDom(data) {
+    var dataComments = data.content;
+    var commentContainerDom = document.createElement("div");
+    var btnDelete = document.createElement("button");
+    commentContainerDom.innerHTML = dataComments;
+    commentContainerDom.className = "comentario-pasado";
+    Object.assign(commentContainerDom.style, data.style);
+    return commentContainerDom;
+    console.log(commentContainerDom);
+};
 
-}
+function addComment() {
+    var newCommentUser = commentUser.innerHTML;
+    console.log(newCommentUser);
+    var newComment = {
+        comment: null,
+        style: {}
+    };
+    newComment.content = newCommentUser;
+    Object.assign(newComment.style, commentUser.style);
+    comments.unshift(newComment);
+    console.log(newComment);
+    console.log(comments);
 
-function addComment () {
-  var newComment = {
-    comment : null,
-    style : {
-      color: "",
-      backgroundColor: "",
-      fontSize: "",
-      textAlign: ""
-    }
-  }
-  comments.unshift(newComment);
-  console.log(newComment);
-  console.log(comments);
+    drawComments()
 
-  drawComments()
-
-}
+};
