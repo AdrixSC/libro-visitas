@@ -23,6 +23,7 @@ var comments = [
 var btnSendComment = document.getElementById("btnSend");
 btnSendComment.addEventListener("click", addComment);
 
+//traer elemento contenedor de los comentarios anteriores
 var pastComments = document.getElementById("comentarios-pasados");
 
 //funcion para pintar comentarios
@@ -48,6 +49,7 @@ function creatCommentsDom(data) {
     console.log(commentContainerDom);
 };
 
+//funcion para agregar nuevo comentario al contenedor de comentarios
 function addComment() {
     var newCommentUser = commentUser.innerHTML;
     console.log(newCommentUser);
